@@ -9,3 +9,12 @@ nav li {
 nav li:not(:last-child) {    
     margin-right: 10px;
 }
+.tasks {
+    border-collapse: collapse;
+}
+.tasks td {
+    padding: 5px;
+}
+.tasks td, .tasks th {
+    border: 1px solid #ccc;
+}
