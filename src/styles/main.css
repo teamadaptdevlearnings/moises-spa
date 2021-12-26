@@ -1,3 +1,6 @@
+nav {
+    margin-bottom: 20px;
+}
 nav ul {
     display: flex;
     margin: 0;
@@ -9,12 +12,12 @@ nav li {
 nav li:not(:last-child) {    
     margin-right: 10px;
 }
-.tasks {
+.users {
     border-collapse: collapse;
 }
-.tasks td {
+.users td {
     padding: 5px;
 }
-.tasks td, .tasks th {
+.users td, .users th {
     border: 1px solid #ccc;
 }
