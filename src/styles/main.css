@@ -1,3 +1,6 @@
+body {
+    background: #ebebeb;
+}
 nav {
     margin-bottom: 20px;
 }
@@ -18,12 +21,16 @@ nav a {
 nav .is-active {
     border-bottom: 2px solid blue;
 }
-.users {
+.users, .table {
     border-collapse: collapse;
 }
 .users td {
     padding: 5px;
 }
-.users td, .users th {
+.users td, .users th, .table td, .table th {
     border: 1px solid #ccc;
+    padding: 5px 15px;
 }
+.table tr:nth-child(even) {
+    background-color: #d8d8d8;
+  }

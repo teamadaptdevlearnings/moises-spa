@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from './pages/Home';
 import About from './pages/About';
 import './styles/main.css';
+import Devices from './pages/Devices';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Switch>
             <Route exact path="/"><Home /></Route>
             <Route path="/about"><About /></Route>
+            <Route path="/devices"><Devices /></Route>
         </Switch>        
     </>
   );
