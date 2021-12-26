@@ -10,6 +10,12 @@ import '../styles/main.css';
                     <td>{info.name}</td>
                     <td>{info.mac_address}</td>
                     <td>{info.ip_address}</td>
+                    <td><button className='purple'>WakeOnLan</button></td>
+                    <td><button className='orange'>Reboot</button></td>
+                    <td><button className='purple'>Suspend</button></td>
+                    <td><button className='red'>Shutdown</button></td>
+                    <td><button className='purple'>View</button></td>
+                    <td><button className='purple'>Edit</button></td>
                 </tr>
             )
         }
@@ -24,6 +30,12 @@ import '../styles/main.css';
                         <th>Name</th>
                         <th>MAC Address</th>
                         <th>IP Address</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
