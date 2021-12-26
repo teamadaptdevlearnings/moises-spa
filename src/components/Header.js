@@ -1,16 +1,16 @@
 import React from "react"
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 function Header() {
     return (
         <header>
             <nav>
-                <ul>
+                <ul>                    
                     <li>
-                        <Link exact to="/">Home</Link>
+                        <NavLink exact={true} activeClassName='is-active' to='/'>Home</NavLink>
                     </li>
                     <li>
-                        <Link exact to="/about">About</Link>
+                        <NavLink activeClassName='is-active' to='/about'>About</NavLink>
                     </li>
                 </ul>
             </nav>

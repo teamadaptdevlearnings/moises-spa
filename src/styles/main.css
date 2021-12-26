@@ -12,6 +12,12 @@ nav li {
 nav li:not(:last-child) {    
     margin-right: 10px;
 }
+nav a {
+    text-decoration: none;
+}
+nav .is-active {
+    border-bottom: 2px solid blue;
+}
 .users {
     border-collapse: collapse;
 }
