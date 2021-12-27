@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import JsonData from '../files/devices.json';
+import Modal from '../components/Modal.js';
 import '../styles/main.css';
 
  function Devices(){
+    const [modalOpen, setModalOpen] = useState(false);
     const DisplayData=JsonData.map(
         (info)=>{
             return(
@@ -14,7 +16,13 @@ import '../styles/main.css';
                     <td><button className='orange'>Reboot</button></td>
                     <td><button className='purple'>Suspend</button></td>
                     <td><button className='red'>Shutdown</button></td>
-                    <td><button className='purple'>View</button></td>
+                    <td><button className='openModalBtn purple'
+                        onClick={() => {
+                            setModalOpen(true);
+                        }}>View
+                        </button>
+                        {modalOpen && <Modal setOpenModal={setModalOpen} />}
+                    </td>                    
                     <td><button className='purple'>Edit</button></td>
                 </tr>
             )
@@ -28,7 +36,7 @@ import '../styles/main.css';
                 <button className='purple'>Wake On Lan all devices</button>
                 <button className='purple'>Create devices</button>
             </div>
-            <table class="table table-striped">
+            <table className="table table-striped">
                 <thead>
                     <tr>
                         <th>Name</th>
