@@ -1,11 +1,11 @@
 import React from "react";
 import "./Modal.css";
 
-function Modal({ setOpenModal }) {
+function Modal({ setOpenModal, device }) {
   return (
     <div className="modalBackground">
       <div className="modalContainer animated fadeIn">
-        <div className="titleCloseBtn">
+        {/* <div className="titleCloseBtn">
           <button
             onClick={() => {
               setOpenModal(false);
@@ -13,12 +13,23 @@ function Modal({ setOpenModal }) {
           >
             &times;
           </button>
-        </div>
+        </div> */}
         <div className="title">
-          <h1>Are You Sure You Want to Continue?</h1>
+          <h4>Device Details</h4>
         </div>
-        <div className="body">
-          <p>The next page looks amazing. Hope you want to go there!</p>
+        <div className="body">          
+          <table className="devicesDetail">
+              <tr>
+                  <th>Device Name</th>
+                  <th>MAC Address</th>
+                  <th>IP Address</th>
+              </tr>
+              <tr>
+                  <td>{device.name}</td>
+                  <td>{device.mac_address}</td>
+                  <td>{device.ip_address}</td>
+              </tr>
+          </table>
         </div>
         <div className="footer">
           <button
@@ -27,9 +38,8 @@ function Modal({ setOpenModal }) {
             }}
             id="cancelBtn"
           >
-            Cancel
+            Close
           </button>
-          <button>Continue</button>
         </div>
       </div>
     </div>

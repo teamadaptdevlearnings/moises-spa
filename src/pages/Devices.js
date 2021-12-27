@@ -5,10 +5,12 @@ import '../styles/main.css';
 
  function Devices(){
     const [modalOpen, setModalOpen] = useState(false);
+    const [device, setDevice] = useState({});
+
     const DisplayData=JsonData.map(
-        (info)=>{
+        (info, index)=>{
             return(
-                <tr>
+                <tr key={index}>
                     <td>{info.name}</td>
                     <td>{info.mac_address}</td>
                     <td>{info.ip_address}</td>
@@ -19,10 +21,10 @@ import '../styles/main.css';
                     <td><button className='openModalBtn purple'
                         onClick={() => {
                             setModalOpen(true);
+                            setDevice(info);
                         }}>View
                         </button>
-                        {modalOpen && <Modal setOpenModal={setModalOpen} />}
-                    </td>                    
+                    </td>                                     
                     <td><button className='purple'>Edit</button></td>
                 </tr>
             )
@@ -54,7 +56,7 @@ import '../styles/main.css';
                     {DisplayData}
                 </tbody>
             </table>
-             
+            {modalOpen && <Modal setOpenModal={setModalOpen} device={device}/>}
         </div>
     )
  }
