@@ -28,12 +28,28 @@ nav .is-active {
 .users td {
     padding: 5px;
 }
-.users td, .users th, .table td, .table th {
+.users td, .users th, .table th {
     border: 1px solid #ccc;
     padding: 5px 15px;
 }
+.table th {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.table th:first-child {
+    border-left: 1px solid #ccc;
+}
+.table th:last-child {
+    border-right: 1px solid #ccc;
+}
 .table tr:nth-child(even) {
-    background-color: #d8d8d8;
+    background-color: #f5f3f3;
+}
+.table td button {
+    display: block;
+    margin: auto;
+    margin: 5px 0;
 }
 button {
     border: none;    
@@ -52,4 +68,17 @@ button {
 }
 .red {
     background: rgb(199, 63, 63);
+}
+.table, .container {
+    width: 75%;
+}
+.container {    
+    display: flex;
+    justify-content: flex-end;
+}
+.container button {
+    margin-bottom: 20px;
+}
+.container button:last-child {
+    margin-left: 10px;
 }

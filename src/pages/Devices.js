@@ -24,6 +24,10 @@ import '../styles/main.css';
     return(
         <div>
             <h1>Devices</h1>
+            <div className='container'>
+                <button className='purple'>Wake On Lan all devices</button>
+                <button className='purple'>Create devices</button>
+            </div>
             <table class="table table-striped">
                 <thead>
                     <tr>
