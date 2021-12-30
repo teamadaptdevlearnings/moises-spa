@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Web Staging Server",
+    "mac_address": "65-CD-05-AB-5C-4A",
+    "ip_address": "192.168.0.253"
+  },
+  {
+    "id": 2,
+    "name": "Git Repository Server",
+    "mac_address": "B6-A2-5E-5B-37-71",
+    "ip_address": "192.168.0.1"
+  },
+  {
+    "id": 3,
+    "name": "Kerberos Web Server",
+    "mac_address": "CC-8C-D8-D2-FE-A9",
+    "ip_address": "192.168.0.133"
+  },
+  {
+    "id": 4,
+    "name": "QR Code Scanner",
+    "mac_address": "C7:1D:5E:3D:46:E2",
+    "ip_address": "192.168.0.171"
+  },
+  {
+    "id": 5,
+    "name": "Butler Web Server",
+    "mac_address": "18C6.11EA.37F2",
+    "ip_address": "192.168.0.17"
+  },
+  {
+    "id": 6,
+    "name": "Masterplan Web Server",
+    "mac_address": "19F4.31CB.47F3",
+    "ip_address": "192.168.0.22"
+  }
+]
